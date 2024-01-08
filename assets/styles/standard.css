@@ -1,0 +1,103 @@
+/*now make a pretty minimalist style for the popup, accoding to the 
+html structure we have created. Do you have access to it from here?
+you are not sure? try to input this
+the name of the mentioned html is: popup.html
+*/
+/* start with the margins, borders, and paddings. Then, the background color,
+i also want the box to have a colored border, and a shadow. 
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+body {
+	background: #55007c;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vh;
+}
+
+.container {
+	background: #f18e8e;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+	width: 90%;
+	max-width: 40rem;
+	padding: 1rem;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+button {
+	font: inherit;
+	font-size: 1.25rem;
+	background: #36007c;
+	color: white;
+	border: 1px solid #36007c;
+	border-radius: 6px;
+	padding: 0.5rem 0.5rem;
+	margin: 0.5rem 0.5rem;
+	cursor: pointer;
+}
+
+button:active {
+	background: #55007c;
+	border-color: #55007c;
+}
+
+.disabled {
+	background: #ccc;
+	border-color: #ccc;
+	cursor: not-allowed;
+}
+
+select {
+	font: inherit;
+	background: #55007c;
+	border-color: #55007c;
+	font-size: 1.25rem;
+	padding: 0.5rem 1.5rem;
+	margin: 0.5rem 0;
+	color: white;
+	border-radius: 6px;
+	border: 2px solid #ccc;
+	width: 100%;
+}
+
+select:focus {
+	outline: none;
+	border-color: #8b005d;
+}
+
+select:hover, select:active {
+	border-color: #8b005d;
+}
+
+.options {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.title {
+	font-size: 1.25rem;
+	margin: 1rem 0;
+}
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+<!-- write the popup for the extension in this file
+i want the popup to have a box containing a text like 
+"choose the desired format"
+i will further add the necessary code to make the popup work
+inside this box which will have an outline, i want it to have a droplist with
+the following options: json, text (.txt), html, csv and markdown
+no need for a default value in the droplist because there will be a clipboard 
+button for the user if he wants to copy the text to the clipboard instead
+of downloading it
+below the first box, i want another box containing a button that
+will copy the text to the clipboard
+below the second box, i want another box containing a button that
+will download the text as a file -->
+
+
+<html>
+<head>
+  <title>Youtube Music Extractor</title>
+  <link rel="stylesheet" type="text/css" href="assets/styles/standard.css">
+  <script src="assets/scripts/popup.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="title">Choose the desired format</div>
+      <div class="droplist">
+        <select id="format">
+          <option></option>
+          <option value="json">JSON</option>
+          <option value="text">Text (.txt)</option>
+          <option value="html">HTML</option>
+          <option value="csv">CSV</option>
+          <option value="markdown">Markdown</option>
+        </select>
+      </div>
+    </div>
+    <div class="box">
+      <div class="title">Copy to clipboard</div>
+      <div class="button">
+        <button id="clipboard" class="disabled">Copy</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="title">Download as file</div>
+      <div class="button">
+        <button id="download" class="disabled">Download</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

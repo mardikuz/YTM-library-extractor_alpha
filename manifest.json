@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube Music Playlist Extractor",
+  "description": "This extension allows the user to extract the link to all playlists in a youtube music library at once and retrieve them in one of the available formattings.",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/icons/hello_extensions.png",
+    "default_title": "Youtube Music Playlist Extractor"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://music.youtube.com/*"],
+        "css":["assets/styles/standard.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "storage"
+  ]
+}
